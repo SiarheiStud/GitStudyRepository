@@ -24,7 +24,6 @@ public class Task8 {
         double drob = Math.abs(a - (int) a);
         while (drob > 0){ // convert the entered number "a" to an long
             bigD = bigD.movePointRight(1);
-            //bigDTemp = bigD.setScale(0, 1);
             bigDTemp = bigD.setScale(0, RoundingMode.valueOf(1));
             bigDTemp = bigD.subtract(bigDTemp);
             drob = bigDTemp.doubleValue();
